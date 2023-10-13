@@ -1,0 +1,59 @@
+h2{
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+    padding: .5rem 0;
+}
+.accordion-item{
+    display: flex;
+    padding: .4rem .3rem;
+    position: relative;
+}
+.accordion-header{
+    height: 2.7rem;
+}
+.face{
+    display: flex; 
+    width: 60%; 
+    text-align: center;
+    position: absolute;
+    right: 2rem;
+}
+.group{
+    width: 60%;
+    text-align: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+.btn{
+    background-color: #052659;
+    color: #fff;
+    margin: 0 2rem;
+    border: none;
+}
+.main{
+    width: 90%; 
+    margin: 4.5rem auto 1rem;
+    border: 1px solid#7da0ca;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.form-select{
+    width: 100%;
+}
+.d-flex{
+    width: 80%;
+}
+tr{
+    margin-bottom: .5rem !important;
+}
+td{
+    position: relative;
+    display: flex;
+    padding: 1rem 0!important;
+}
+.respuesta{
+      margin:0 auto;
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+  <link rel="stylesheet" href="styleIndex.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <title>ENCATI</title>
+</head>
+<body style="font-family: 'Quicksand', sans-serif;">
+
+<header>
+    <nav class="navbar bg-body fixed-top" style="background-color: #021024 !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: #c1e8ff;">
+                <img src="logoA.png" alt="Logo" width="39" height="33" class="d-inline-block align-text-top">
+                ENCATI
+            </a>
+            <form class="d-flex" role="search">
+                <i class="bi bi-shop" style="margin-right: .5rem; color:white; font-size: 1.6rem;"></i>
+                
+                <select class="form-select" aria-label="Seleccione una tiendita">
+                    <option selected>Tiendita de abarrotes Victoria</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+                <button class="btn" type="submit" style="margin-left: .6rem; margin-right: .2rem !important; background-color: #c1e8ff !important; color: #021024;"><i class="bi bi-calendar-date-fill"></i></button>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 20%; margin: 0px !important;">
+            </form>
+        </div>
+    </nav>
+</header>
+
+<div class="main" >
+    <h3 style="text-align: center; font-weight: 900; color: #052659;">Aplicación web de Encuestas de Calidad para tu Tiendita</h3>
+    <div class="accordion" id="accordionFlushExample">
+        <div class="accordion-item" style="background-color: rgba(135, 206, 250, 0.5);
+        ">
+            <h2 class="accordion-header" id="flush-headingOne" style="display: flex; padding: .0px .5rem; width: 40%; height:2.7rem;">
+                <i class="bi bi-gear"></i>Funcionalidad
+                <div class="respuesta" ></div>
+            
+            </h2>
+            <div class="face">
+                <div onclick="respuesta(event)" style="width: 20%; color: crimson; cursor: pointer;">
+                    <i class="bi bi-emoji-angry-fill"></i><br>Mala
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: darkorange; cursor: pointer;">
+                    <i class="bi bi-emoji-frown-fill"></i><br>Regular
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: gold; cursor: pointer;">
+                    <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: seagreen; cursor: pointer;">
+                    <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: dodgerblue; cursor: pointer;">
+                    <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="accordion-item" style="background-color: #90ee9080; ">
+            <h2 class="accordion-header" id="flush-headingOne" style="display: flex; padding: 0px .5rem; width: 20%;">
+                <i class="bi bi-shield-check"></i>Confiabilidad
+                <div class="respuesta" ></div>
+                
+            </h2>
+            <div class="face">
+                <div onclick="respuesta(event)" style="width: 20%; color: crimson; cursor: pointer;">
+                    <i class="bi bi-emoji-angry-fill"></i><br>Mala
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: darkorange; cursor: pointer;">
+                    <i class="bi bi-emoji-frown-fill"></i><br>Reular
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: gold; cursor: pointer;">
+                    <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: seagreen; cursor: pointer;">
+                    <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: dodgerblue; cursor: pointer;">
+                    <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="accordion-item" style="background-color: #ff634480;">
+            <h2 class="accordion-header" id="flush-headingOne" style="display: flex; padding: 0px .5rem; width: 20%;">
+                <i class="bi bi-phone"></i>Usabilidad
+                <div class="respuesta" ></div>
+               
+            </h2>
+            <div class="face">
+                <div onclick="respuesta(event)" style="width: 20%; color: crimson; cursor: pointer;">
+                    <i class="bi bi-emoji-angry-fill"></i><br>Mala
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: darkorange; cursor: pointer;">
+                    <i class="bi bi-emoji-frown-fill"></i><br>Regular
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: gold; cursor: pointer;">
+                    <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: seagreen; cursor: pointer;">
+                    <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: dodgerblue; cursor: pointer;">
+                    <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne" style="display: flex; padding: 0px .5rem; width: 20%;">
+                <i class="bi bi-graph-up-arrow"></i>Rendimiento
+                <div class="respuesta" ></div>
+            </h2>
+            <div class="face">
+                <div onclick="respuesta(event)" style="width: 20%; color: crimson; cursor: pointer;">
+                    <i class="bi bi-emoji-angry-fill"></i><br>Mala
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: darkorange; cursor: pointer;">
+                    <i class="bi bi-emoji-frown-fill"></i><br>Regular
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: gold; cursor: pointer;">
+                    <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: seagreen; cursor: pointer;">
+                    <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: dodgerblue; cursor: pointer;">
+                    <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne" style="display: flex; padding: 0px .5rem; width: 20%;">
+                <i class="bi bi-wrench-adjustable-circle"></i>Mantenimiento
+                <div class="respuesta" style="width: 20%; position: absolute; right: .2rem; font-size: 1.1rem;"></div>
+            </h2>
+            <div class="face">
+                <div onclick="respuesta(event)" style="width: 20%; color: crimson; cursor: pointer;">
+                    <i class="bi bi-emoji-angry-fill"></i><br>Mala
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: darkorange; cursor: pointer;">
+                    <i class="bi bi-emoji-frown-fill"></i><br>Regular
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: gold; cursor: pointer;">
+                    <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: seagreen; cursor: pointer;">
+                    <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: dodgerblue; cursor: pointer;">
+                    <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne" style="display: flex; padding: .6rem .5rem; width: 20%;">
+                <i class="bi bi-laptop"></i>Portabilidad
+                <div class="respuesta" style="width: 20%; position: absolute; right: .2rem; font-size: 1.1rem;"></div>
+            </h2>
+            
+            <div class="face">
+                <div onclick="respuesta(event)" style="width: 20%; color: crimson; cursor: pointer;">
+                    <i class="bi bi-emoji-angry-fill"></i><br>Mala
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: darkorange; cursor: pointer;">
+                    <i class="bi bi-emoji-frown-fill"></i><br>Regular
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: gold; cursor: pointer;">
+                    <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: seagreen; cursor: pointer;">
+                    <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: dodgerblue; cursor: pointer;">
+                    <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne" style="display: flex; padding: .6rem .5rem; width: 20%;">
+                <i class="bi bi-lock"></i>Seguridad
+                <div class="respuesta" style="width: 20%; position: absolute; right: .2rem; font-size: 1.1rem;"></div>
+            </h2>
+            
+            <div class="face">
+                <div onclick="respuesta(event)" style="width: 20%; color: crimson; cursor: pointer;">
+                    <i class="bi bi-emoji-angry-fill"></i><br>Mala
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: darkorange; cursor: pointer;">
+                    <i class="bi bi-emoji-frown-fill"></i><br>Regular
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: gold; cursor: pointer;">
+                    <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: seagreen; cursor: pointer;">
+                    <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: dodgerblue; cursor: pointer;">
+                    <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne" style="display: flex; padding: .6rem .5rem; width: 20%;" >
+                <i class="bi bi-phone-flip"></i>Compatibilidad
+                <div class="respuesta" style="width: 20%; position: absolute; right: .2rem; font-size: 1.1rem;"></div>
+            </h2>
+            
+            <div class="face">
+                <div onclick="respuesta(event)" style="width: 20%; color: crimson; cursor: pointer;">
+                    <i class="bi bi-emoji-angry-fill"></i><br>Mala
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: darkorange; cursor: pointer;">
+                    <i class="bi bi-emoji-frown-fill"></i><br>Regular
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: gold; cursor: pointer;">
+                    <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: seagreen; cursor: pointer;">
+                    <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+                </div>
+                <div onclick="respuesta(event)" style="width: 20%; color: dodgerblue; cursor: pointer;">
+                    <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+                </div>
+            </div>
+       
+            
+        </div>
+
+        </div>
+        
+        </div>
+
+        <div class="group">
+            <button type="button" class="btn" style="background-color: #ef4b4c; color: #fff;">Cancelar</button>
+            <button type="button" class="btn">Guardar</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Función para mover el div clickeado de "face" a "respuesta"
+    function respuesta(event) {
+        // Obtén el div clickeado (el div de "face" que contiene el ícono y texto)
+        var divClickeado = event.target.closest('div');
+
+        // Obtén el ícono y texto del div clickeado
+        var icono = divClickeado.innerHTML;
+        var color = divClickeado.style.color;  // Guardamos el color actual
+        var rec= Document.ele
+
+        // Crea un nuevo div con el ícono y texto y aplica el color
+        var nuevoDiv = document.createElement('div');
+        nuevoDiv.innerHTML = icono;
+        nuevoDiv.style.color = color;  // Aplicamos el color
+
+        // Agrega el nuevo div al div de "respuesta"
+        var divRespuesta = document.querySelector('.respuesta');
+        divRespuesta.appendChild(nuevoDiv);
+
+        // Remueve el div clickeado del div de "face"
+        divClickeado.remove();
+    }
+</script>
+
+</body>
+</html>
