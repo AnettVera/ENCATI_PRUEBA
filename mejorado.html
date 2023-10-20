@@ -6,24 +6,410 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
-  <link rel="stylesheet" href="styleIndex.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mejorado.css">
   <title>ENCATI</title>
 </head>
 <body style="font-family: 'Quicksand', sans-serif;">
 
+  <header>
+    <nav class="navbar bg-body fixed-top" style="background-color: #021024 !important; position: absolute !important; ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: #c1e8ff;">
+                <img src="logoA.png" alt="Logo" width="39" height="33" class="d-inline-block align-text-top">
+                ENCATI
+            </a>
+            <form class="d-flex" role="search">
+                <i class="bi bi-shop" style="margin-right: .5rem; color:white; font-size: 1.6rem;"></i>
+                
+                <select class="form-select" aria-label="Seleccione una tiendita">
+                    <option selected>Tiendita de abarrotes Victoria</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+                <button class="btn" type="submit" style="margin-left: .6rem; margin-right: .2rem !important; background-color: #c1e8ff !important; color: #021024;"><i class="bi bi-calendar-date-fill"></i></button>
+                <input class="form-control me-2" type="search" placeholder="00/00/00/" aria-label="Search" style="width: 20%; margin: 0px !important; width: 7.8rem;">
+            </form>
+        </div>
+    </nav>
+</header>
+
+
 <div class="content">
+    <h2 style="font-weight: 600; text-align: center;">Aplicación web de Encuestas de Calidad para tu Tiendita</h2>
     <table class="principal">
-        <tr>
-            <td class="pregunta"></td>
-            <td class="respuesta"></td>
-        </tr>
+      <tbody>
+        <tr id="Funcionalidad">
+          <td class="pregunta" >
+            <h3>1- Funcionalidad</h3>
+            <div class="face" id="opcFun">
+              <div class="mala" onclick="copiarPropiedades(this)">
+                  <i class="bi bi-emoji-angry-fill"></i><br>Mala
+              </div>
+              <div class="regular" onclick="copiarPropiedades(this)">
+                  <i class="bi bi-emoji-frown-fill"></i><br>Regular
+              </div>
+              <div  class="buena"onclick="copiarPropiedades(this)" >
+                  <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+              </div>
+              <div  class="mbuena" onclick="copiarPropiedades(this)">
+                  <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+              </div>
+              <div class="excelente" onclick="copiarPropiedades(this)">
+                  <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+              </div>
+          </div>
+          </td>
+          <td class="respuesta" >
+            <div class="re" id="respFun">
+
+            </div>
+          </td>
+      </tr>
+      <tr id="Confiabilidad">
+        <td class="pregunta" >
+          <h3>2- Confiabilidad</h3>
+          <div class="face" id="opcConf">
+            <div class="mala"  onclick="copiarPropiedadesConf(this)">
+                <i class="bi bi-emoji-angry-fill"></i><br>Mala
+            </div>
+            <div class="regular" onclick="copiarPropiedadesConf(this)">
+                <i class="bi bi-emoji-frown-fill"></i><br>Regular
+            </div>
+            <div  class="buena" onclick="copiarPropiedadesConf(this)">
+                <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+            </div>
+            <div  class="mbuena" onclick="copiarPropiedadesConf(this)">
+                <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+            </div>
+            <div class="excelente" onclick="copiarPropiedadesConf(this)">
+                <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+            </div>
+        </div>
+        </td>
+        <td class="respuesta" >
+          <div class="re"id="resConf">
+
+          </div>
+        </td>
+      </tr>
+      <tr id="Usabilidad">
+        <td class="pregunta" >
+          <h3>3- Usabilidad</h3>
+          <div class="face" id="opcUs">
+            <div class="mala" onclick="copiarPropiedadesUs(this)">
+                <i class="bi bi-emoji-angry-fill"></i><br>Mala
+            </div>
+            <div class="regular" onclick="copiarPropiedadesUs(this)">
+                <i class="bi bi-emoji-frown-fill"></i><br>Regular
+            </div>
+            <div  class="buena" onclick="copiarPropiedadesUs(this)">
+                <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+            </div>
+            <div  class="mbuena" onclick="copiarPropiedadesUs(this)">
+                <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+            </div>
+            <div class="excelente" onclick="copiarPropiedadesUs(this)">
+                <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+            </div>
+        </div>
+        </td>
+        <td class="respuesta">
+          <div class="re" id="resUs">
+
+          </div>
+        </td>
+      </tr>
+      <tr id="Rendimiento">
+        <td class="pregunta" >
+          <h3>4- Rendimiento</h3>
+          <div class="face" id="opcRen">
+            <div class="mala" onclick="copiarPropiedadesRen(this)">
+                <i class="bi bi-emoji-angry-fill"></i><br>Mala
+            </div>
+            <div class="regular" onclick="copiarPropiedadesRen(this)">
+                <i class="bi bi-emoji-frown-fill"></i><br>Regular
+            </div>
+            <div  class="buena" onclick="copiarPropiedadesRen(this)">
+                <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+            </div>
+            <div  class="mbuena" onclick="copiarPropiedadesRen(this)">
+                <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+            </div>
+            <div class="excelente" onclick="copiarPropiedadesRen(this)">
+                <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+            </div>
+        </div>
+        </td>
+        <td class="respuesta">
+          <div class="re" id="resRen">
+
+          </div>
+        </td>
+      </tr>
+      <tr id="Mantenimiento">
+        <td class="pregunta" >
+          <h3>5- Mantenimiento</h3>
+          <div class="face" id="opcMan">
+            <div class="mala" onclick="copiarPropiedadesMan(this)">
+                <i class="bi bi-emoji-angry-fill"></i><br>Mala
+            </div>
+            <div class="regular" onclick="copiarPropiedadesMan(this)">
+                <i class="bi bi-emoji-frown-fill"></i><br>Regular
+            </div>
+            <div  class="buena" onclick="copiarPropiedadesMan(this)">
+                <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+            </div>
+            <div  class="mbuena" onclick="copiarPropiedadesMan(this)">
+                <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+            </div>
+            <div class="excelente" onclick="copiarPropiedadesMan(this)">
+                <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+            </div>
+        </div>
+        </td>
+        <td class="respuesta">
+          <div class="re" id="resMan">
+
+          </div>
+        </td>
+      </tr>
+       <tr id="Portabilidad">
+        <td class="pregunta" >
+          <h3>6- Portabilidad</h3>
+          <div class="face" id="opcPor">
+            <div class="mala" onclick="copiarPropiedadesPor(this)">
+                <i class="bi bi-emoji-angry-fill"></i><br>Mala
+            </div>
+            <div class="regular" onclick="copiarPropiedadesPor(this)">
+                <i class="bi bi-emoji-frown-fill"></i><br>Regular
+            </div>
+            <div  class="buena" onclick="copiarPropiedadesPor(this)">
+                <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+            </div>
+            <div  class="mbuena" onclick="copiarPropiedadesPor(this)">
+                <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+            </div>
+            <div class="excelente" onclick="copiarPropiedadesPor(this)">
+                <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+            </div>
+        </div>
+        </td>
+        <td class="respuesta">
+          <div class="re" id="resPor">
+
+          </div>
+        </td>
+      </tr>
+      <tr id="Seguridad">
+        <td class="pregunta" >
+          <h3>7- Seguridad</h3>
+          <div class="face" id="opcSeg">
+            <div class="mala" onclick="copiarPropiedadesSeg(this)">
+                <i class="bi bi-emoji-angry-fill"></i><br>Mala
+            </div>
+            <div class="regular" onclick="copiarPropiedadesSeg(this)">
+                <i class="bi bi-emoji-frown-fill"></i><br>Regular
+            </div>
+            <div  class="buena" onclick="copiarPropiedadesSeg(this)">
+                <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+            </div>
+            <div  class="mbuena" onclick="copiarPropiedadesSeg(this)">
+                <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+            </div>
+            <div class="excelente" onclick="copiarPropiedadesSeg(this)">
+                <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+            </div>
+        </div>
+        </td>
+        <td class="respuesta">
+          <div class="re" id="resSeg">
+
+          </div>
+        </td>
+      </tr>
+      <tr id="Compatibilidad" style="border-bottom: 1px solid #c1e8ff;">
+        <td class="pregunta" >
+          <h3>8- Compatibilidad</h3>
+          <div class="face" id="opcCom">
+            <div class="mala" onclick="copiarPropiedadesCom(this)">
+                <i class="bi bi-emoji-angry-fill"></i><br>Mala
+            </div>
+            <div class="regular" onclick="copiarPropiedadesCom(this)">
+                <i class="bi bi-emoji-frown-fill"></i><br>Regular
+            </div>
+            <div  class="buena" onclick="copiarPropiedadesCom(this)">
+                <i class="bi bi-emoji-neutral-fill"></i><br>Buena
+            </div>
+            <div  class="mbuena" onclick="copiarPropiedadesCom(this)" >
+                <i class="bi bi-emoji-smile-fill"></i><br>Muy buena
+            </div>
+            <div class="excelente" onclick="copiarPropiedadesCom(this)">
+                <i class="bi bi-emoji-laughing-fill"></i><br>Excelente
+            </div>
+        </div>
+        </td>
+        <td class="respuesta">
+          <div class="re" id="resCom">
+
+          </div>
+        </td>
+      </tr>
+      </tbody>
 
     </table>
+    <div class="buttons">
+      <button type="button" class="btn " style="background-color: #021024 !important; color: #c1e8ff;">Cancelar</button>
+      <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn " style="background-color: #193661 !important; color: aliceblue;">Guardar</button>
+    </div>
+
 
 </div>
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+      <h3 style="text-align: center;">Calificación</h3>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          //PORCENTAJES DE RESULTADOS
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+  </div>
+  </div>
+</div>
+
+<script>
+    function copiarPropiedades(elemento) {
+      var resFun = document.getElementById("respFun");
+      var row = document.getElementById("Funcionalidad");
+
+      var color = window.getComputedStyle(elemento).color;
+      var icon = elemento.querySelector("i").outerHTML;
+      var text = elemento.textContent;
+
+    
+      resFun.style.color = color;
+      resFun.innerHTML = icon + "<br>" + text;
+
+      
+      row.style.backgroundColor = "rgba" + color.slice(3, -1) + ", 0.2)";
+    }
+
+
+
+
+    function copiarPropiedadesConf(elemento) {
+      var resFun = document.getElementById("resConf");
+
+      var color = window.getComputedStyle(elemento).color;
+      var icon = elemento.querySelector("i").outerHTML;
+      var text = elemento.textContent;
+
+      resConf.style.color = color;
+      resConf.innerHTML = icon + "<br>" + text;
+      var row = document.getElementById("Confiabilidad");
+  
+      row.style.backgroundColor = "rgba" + color.slice(3, -1) + ", 0.2)";
+    }
+
+    function copiarPropiedadesUs(elemento) {
+      var resFun = document.getElementById("resUs");
+
+      var color = window.getComputedStyle(elemento).color;
+      var icon = elemento.querySelector("i").outerHTML;
+      var text = elemento.textContent;
+
+      resUs.style.color = color;
+      resUs.innerHTML = icon + "<br>" + text;
+      var row = document.getElementById("Usabilidad");
+  
+  row.style.backgroundColor = "rgba" + color.slice(3, -1) + ", 0.2)";
+      
+    }
+    
+    function copiarPropiedadesRen(elemento) {
+      var resFun = document.getElementById("resRen");
+
+      var color = window.getComputedStyle(elemento).color;
+      var icon = elemento.querySelector("i").outerHTML;
+      var text = elemento.textContent;
+
+      resRen.style.color = color;
+      resRen.innerHTML = icon + "<br>" + text;
+      var row = document.getElementById("Rendimiento");
+  
+  row.style.backgroundColor = "rgba" + color.slice(3, -1) + ", 0.2)";
+    }
+
+    function copiarPropiedadesMan(elemento) {
+      var resFun = document.getElementById("resMan");
+
+      var color = window.getComputedStyle(elemento).color;
+      var icon = elemento.querySelector("i").outerHTML;
+      var text = elemento.textContent;
+
+      resMan.style.color = color;
+      resMan.innerHTML = icon + "<br>" + text;
+      var row = document.getElementById("Mantenimiento");
+  
+  row.style.backgroundColor = "rgba" + color.slice(3, -1) + ", 0.2)";
+    }
+    function copiarPropiedadesPor(elemento) {
+      var resFun = document.getElementById("resPor");
+
+      var color = window.getComputedStyle(elemento).color;
+      var icon = elemento.querySelector("i").outerHTML;
+      var text = elemento.textContent;
+
+      resPor.style.color = color;
+      resPor.innerHTML = icon + "<br>" + text;
+      var row = document.getElementById("Portabilidad");
+  
+  row.style.backgroundColor = "rgba" + color.slice(3, -1) + ", 0.2)";
+    }
+    function copiarPropiedadesSeg(elemento) {
+      var resFun = document.getElementById("resSeg");
+
+      var color = window.getComputedStyle(elemento).color;
+      var icon = elemento.querySelector("i").outerHTML;
+      var text = elemento.textContent;
+
+      resSeg.style.color = color;
+      resSeg.innerHTML = icon + "<br>" + text;
+      var row = document.getElementById("Seguridad");
+  
+  row.style.backgroundColor = "rgba" + color.slice(3, -1) + ", 0.2)";
+    }
+    function copiarPropiedadesCom(elemento) {
+      var resFun = document.getElementById("resCom");
+
+      var color = window.getComputedStyle(elemento).color;
+      var icon = elemento.querySelector("i").outerHTML;
+      var text = elemento.textContent;
+
+      resCom.style.color = color;
+      resCom.innerHTML = icon + "<br>" + text;
+
+      var row = document.getElementById("Compatibilidad");
+  
+  row.style.backgroundColor = "rgba" + color.slice(3, -1) + ", 0.2)";
+    }
+  
+</script>
+
+
+
 
 </body>
 </html>
